@@ -2,9 +2,9 @@ from tkinter import *
 from PIL import ImageTk,Image
 
 root = Tk()
+root.title("Hello, Python")
 # Creating a label
-myLabel1 = Label(text="Hello, Learner 1", anchor="s", bg="red",
-                 padx=20,
+myLabel1 = Label(text="Hello, Learner 1", anchor="s", bg="red", padx=20,
                  cursor="arrow", fg="white", justify="left")
 myLabel2 = Label(text="Hello, Learner 2")
 myLabel3 = Label(text="Hello, Learner 3")
