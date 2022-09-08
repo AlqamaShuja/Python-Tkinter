@@ -11,11 +11,13 @@ input1.grid(row=0, column=0, columnspan=3, padx=10, pady=10, ipady=5)
 
 def button_add():
     # return
-    sum = eval(data);
-    input1.delete(0, END)
-    input1.insert(0, sum)
-
-
+    try:
+        sum = eval(data)
+        input1.delete(0, END)
+        input1.insert(0, sum)
+    except:
+        input1.delete(0, END)
+        input1.insert(0, "Invalid Operation")
 
 def button_click(num):
     current = input1.get()
